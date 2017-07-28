@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "ZYFPopview.h"
 
 @interface ViewController ()
+
+@property (nonatomic, strong)ZYFPopview *popView;
 
 @end
 
@@ -25,5 +28,19 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)click:(id)sender {
+    
+    
+    self.popView = [[ZYFPopview alloc]initInView:[UIApplication sharedApplication].keyWindow rows:@[@"0",@"1",@"2"] doneBlock:^(NSInteger selectIndex) {
+        
+        NSLog(@"%ld",selectIndex);
+        
+    } cancleBlock:^{
+      
+        NSLog(@"取消");
+    }];
+    
+    [self.popView showPopView];
+}
 
 @end

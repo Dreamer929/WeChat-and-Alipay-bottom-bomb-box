@@ -15,6 +15,7 @@
 		95F730541F2B03B900A1A768 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95F730521F2B03B900A1A768 /* LaunchScreen.storyboard */; };
 		95F7305F1F2B03B900A1A768 /* ZYFPopViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F7305E1F2B03B900A1A768 /* ZYFPopViewTests.m */; };
 		95F7306A1F2B03B900A1A768 /* ZYFPopViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F730691F2B03B900A1A768 /* ZYFPopViewUITests.m */; };
+		95F7307A1F2B03F000A1A768 /* ZYFPopview.m in Sources */ = {isa = PBXBuildFile; fileRef = 95F730791F2B03F000A1A768 /* ZYFPopview.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		95F730651F2B03B900A1A768 /* ZYFPopViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYFPopViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95F730691F2B03B900A1A768 /* ZYFPopViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYFPopViewUITests.m; sourceTree = "<group>"; };
 		95F7306B1F2B03B900A1A768 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95F730781F2B03F000A1A768 /* ZYFPopview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYFPopview.h; sourceTree = "<group>"; };
+		95F730791F2B03F000A1A768 /* ZYFPopview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYFPopview.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		95F730431F2B03B900A1A768 /* ZYFPopView */ = {
 			isa = PBXGroup;
 			children = (
+				95F730771F2B03DB00A1A768 /* Popview */,
 				95F730471F2B03B900A1A768 /* AppDelegate.h */,
 				95F730481F2B03B900A1A768 /* AppDelegate.m */,
 				95F7304A1F2B03B900A1A768 /* ViewController.h */,
@@ -138,6 +142,15 @@
 				95F7306B1F2B03B900A1A768 /* Info.plist */,
 			);
 			path = ZYFPopViewUITests;
+			sourceTree = "<group>";
+		};
+		95F730771F2B03DB00A1A768 /* Popview */ = {
+			isa = PBXGroup;
+			children = (
+				95F730781F2B03F000A1A768 /* ZYFPopview.h */,
+				95F730791F2B03F000A1A768 /* ZYFPopview.m */,
+			);
+			path = Popview;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +291,7 @@
 			files = (
 				95F7304C1F2B03B900A1A768 /* ViewController.m in Sources */,
 				95F730491F2B03B900A1A768 /* AppDelegate.m in Sources */,
+				95F7307A1F2B03F000A1A768 /* ZYFPopview.m in Sources */,
 				95F730461F2B03B900A1A768 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
